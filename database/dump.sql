@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS articles (
   id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255) NOT NULL,
   content LONGTEXT NOT NULL,
-  banner LONGBLOB,
+  banner LONGTEXT,
   category VARCHAR(100),
   author_id INT NOT NULL,
   likes INT DEFAULT 0,
