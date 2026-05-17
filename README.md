@@ -49,6 +49,9 @@ npm run dev
 API disponível em `http://localhost:3001`
 
 ## Estrutura
+
+
+```
 src/
 ├── controllers/     # Lógica de negócio
 │   ├── authController.ts
@@ -65,6 +68,8 @@ src/
 └── server.ts
 database/
 └── dump.sql         # Estrutura do banco
+
+```
 
 ## Endpoints
 
