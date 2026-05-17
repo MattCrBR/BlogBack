@@ -3,6 +3,7 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import authRoutes from './routes/authRoutes'
 import articleRoutes from './routes/articleRoutes'
+import userRoutes from './routes/userRoutes'
 
 dotenv.config()
 
@@ -14,6 +15,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }))
 
 app.use('/api/auth', authRoutes)
 app.use('/api/articles', articleRoutes)
+app.use('/api/users', userRoutes)
 
 app.get('/health', (req, res) => {
   res.json({ message: 'Server is running!' })
